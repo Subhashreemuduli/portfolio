@@ -1,0 +1,363 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "opensans-bold", sans-serif;
+  box-sizing: border-box;
+}
+/* Header section */
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #161415;
+  z-index: 100;
+  border-bottom: 2px solid #16141595;
+  position: fixed;
+  width: 100%;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 40px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #16141595;
+}
+nav ul li {
+  display: inline-block;
+  padding: 15px 0 12px 0;
+}
+.activeLink {
+  color: #f06000;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid #f06000;
+}
+#checkbtn {
+  color: #f06000;
+  font-size: 30px;
+  display: none;
+}
+#check {
+  display: none;
+}
+#check:checked ~ ul {
+  right: 8%;
+}
+
+/* Home Section */
+
+.home-page {
+  background-image: url(Images/header-background.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  /* line-height: 45px; */
+}
+.home-page h1 {
+  font-size: 3rem;
+}
+.home-page h1:hover {
+  color: #f06000;
+}
+.home-page h4 {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 15px;
+  border-bottom: 1px solid #514c4c;
+}
+.social-links {
+  padding-top: 30px;
+}
+.social-links a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 12px;
+}
+.social-links a:hover {
+  color: #f06000;
+  transition: 0.3s;
+}
+#about {
+  background-color: #2b2b2b;
+}
+.about-container {
+  padding-top: 96px;
+  padding-bottom: 86px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.about-container img {
+  height: 140px;
+  width: 140px;
+  border-radius: 100%;
+}
+.details {
+  text-align: justify;
+  width: 60%;
+}
+.details p {
+  line-height: 35px;
+  font-size: 18px;
+  color: #eae5e5;
+}
+.details h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #f06000;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-right: 50px;
+  /* align-items: center; */
+}
+
+.resume_file {
+  display: flex;
+  height: 50px;
+  width: 220px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #444;
+  font-size: 18px;
+  padding: 10px 5px;
+  position: relative;
+  top: 30%;
+}
+.resume_file:hover {
+  background-color: #817979;
+}
+.download_icon {
+  font-size: 18px;
+}
+.about-me span {
+  line-height: 30px;
+  font-size: 18px;
+  color: #eae5e5;
+}
+.about-me h3 {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  color: #11abb0;
+}
+
+/* Resume section */
+
+.work-container {
+  background-color: #161415;
+
+  padding-top: 96px;
+  padding-bottom: 86px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  overflow: hidden;
+  flex-wrap: wrap;
+  box-shadow: rgba(244, 242, 242, 0.137) 0px 4px 8px 0px;
+}
+
+.work-container h1 {
+  font-size: 22px;
+  color: #ffffff;
+  width: 140px;
+  padding-left: 30px;
+}
+h1 span {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #f06000;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.details h2 a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #f06000;
+  padding-bottom: 10px;
+}
+.details h2 a:hover {
+  color: #ffffff;
+}
+.details .info {
+  font-size: 16px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.details h2 span {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #f06000;
+  padding-bottom: 10px;
+}
+.details h2 span:hover {
+  color: #ffffff;
+}
+
+li {
+  list-style: none;
+}
+.skill-rows {
+  margin-bottom: 35px;
+}
+
+.progress-bar {
+  background-color: #eae5e5;
+  height: 40px;
+  width: 70%;
+  margin: 15px 0;
+}
+.expand {
+  background-color: #11abb0;
+  height: 40px;
+}
+.skill-rows span {
+  color: #ffffff;
+}
+.row-1 {
+  animation-name: ProgressBar;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.row-2 {
+  animation-name: Progress-Bar;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* Contact section */
+
+#contact {
+  padding-top: 96px;
+  padding-bottom: 86px;
+  background-color: #2b2b2b;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+}
+.address h3 {
+  color: #11abb0;
+  margin-bottom: 10px;
+}
+#contact span {
+  color: #ffffff;
+  /* font-weight: 600; */
+}
+#contact span:hover {
+  color: #f06000;
+}
+
+/* Footer Section */
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #161415;
+}
+footer .social-links a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #525252;
+  margin: 12px;
+}
+footer .social-links a:hover {
+  color: #ffffff;
+  transition: 0.5s;
+}
+.copyright {
+  margin-top: 35px;
+  color: #3a3838f3;
+}
+
+@media only screen and (max-width: 767px) {
+  #about img {
+    display: none;
+  }
+  .work-container h1 {
+    position: relative;
+    margin-bottom: 5%;
+    padding-right: 100%;
+    padding-left: 40%;
+  }
+  .home-page h1 {
+    font-size: 1.7rem;
+  }
+  #checkbtn {
+    display: block;
+    position: absolute;
+    right: 8%;
+    margin-top: 30px;
+  }
+  nav ul li a {
+    width: 100%;
+    border-bottom: none;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 10%;
+    margin-right: 20px;
+    background-color: #1f2024;
+    border-bottom: none;
+    right: -100%;
+  }
+  nav ul li :hover {
+    border-bottom: none;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .home-page h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@keyframes ProgressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes Progress-Bar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
