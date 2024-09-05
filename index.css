@@ -59,7 +59,6 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   color: #fff;
-  /* line-height: 45px; */
 }
 .home-page h1 {
   font-size: 3rem;
@@ -123,14 +122,12 @@ nav ul li a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* justify-content: center; */
 }
 .about-me {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding-right: 50px;
-  /* align-items: center; */
 }
 
 .resume_file {
@@ -272,7 +269,6 @@ li {
 }
 #contact span {
   color: #ffffff;
-  /* font-weight: 600; */
 }
 #contact span:hover {
   color: #f06000;
