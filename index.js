@@ -1,5 +1,5 @@
 function updateActiveLink() {
-  let pathname = window.location.hash; 
+  let pathname = window.location.hash || '#home'; 
   const navLinksElement = document.querySelectorAll('a');
 
   navLinksElement.forEach((nav_element) => {
